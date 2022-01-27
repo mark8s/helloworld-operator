@@ -1,0 +1,47 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: helloworld-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Mark is the Schema for the marks API
+      displayName: Mark
+      kind: Mark
+      name: marks.hello.mark8s.io
+      version: v1alpha1
+  description: test operator
+  displayName: helloworld-operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - helloworld safe easy
+  links:
+  - name: Helloworld Operator
+    url: https://helloworld-operator.domain
+  maintainers:
+  - email: lesi1
+    name: mark
+  maturity: alpha
+  provider:
+    name: mark
+  version: 0.0.0
