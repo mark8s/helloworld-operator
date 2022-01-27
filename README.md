@@ -2,6 +2,11 @@
 a k8s operator 、operator-sdk 
 
 ## Operator
+参考 
+
+> https://jicki.cn/kubernetes-operator/
+> https://learnku.com/articles/60683
+> https://opensource.actionsky.com/20210706-kubernetes-operator/
 
 ### 安装
 
@@ -72,8 +77,6 @@ config  Dockerfile  go.mod  go.sum  hack  main.go  Makefile  PROJECT
 10 directories, 29 files
 [root@infra helloworld-operator]#
 ```
-
-
 
 创建crd
 
