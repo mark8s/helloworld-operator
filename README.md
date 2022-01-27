@@ -173,7 +173,7 @@ https://github.com/operator-framework/operator-sdk/issues/5284
 
 意思是虚拟机上面还得装gcc
 
-![image-20220126145422717](C:\Users\mark\AppData\Roaming\Typora\typora-user-images\image-20220126145422717.png)
+![Image text](https://github.com/mark8s/helloworld-operator/img/image-1.png)
 
 我查了下我本地的虚拟机环境，果然没装，于是安装了下：
 
@@ -376,7 +376,7 @@ make manifests
 
 执行完上述后，我们可以查看生成的crd，路径为 config/crd/bases/hello.mark8s.io_marks.yaml
 
-![image-20220127152400363](C:\Users\mark\AppData\Roaming\Typora\typora-user-images\image-20220127152400363.png)
+![Image text](https://github.com/mark8s/helloworld-operator/img/image-2.png)
 
 内容如下
 
