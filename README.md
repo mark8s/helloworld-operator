@@ -173,7 +173,7 @@ https://github.com/operator-framework/operator-sdk/issues/5284
 
 意思是虚拟机上面还得装gcc
 
-![](https://github.com/mark8s/helloworld-operator/tree/master/img/image-1.png)
+![Image](https://github.com/mark8s/helloworld-operator/tree/master/img/image-1.png)
 
 我查了下我本地的虚拟机环境，果然没装，于是安装了下：
 
