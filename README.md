@@ -173,7 +173,7 @@ https://github.com/operator-framework/operator-sdk/issues/5284
 
 意思是虚拟机上面还得装gcc
 
-![Image text](https://github.com/mark8s/helloworld-operator/img/image-1.png)
+![Image text](https://github.com/mark8s/helloworld-operator/tree/master/img/image-1.png)
 
 我查了下我本地的虚拟机环境，果然没装，于是安装了下：
 
@@ -376,7 +376,8 @@ make manifests
 
 执行完上述后，我们可以查看生成的crd，路径为 config/crd/bases/hello.mark8s.io_marks.yaml
 
-![Image text](https://github.com/mark8s/helloworld-operator/img/image-2.png)
+![Image text](https://github.com/mark8s/helloworld-operator/tree/master/img/image-2.png)
+
 
 内容如下
 
@@ -927,7 +928,7 @@ RUN go env -w GOPROXY=https://goproxy.cn,direct
 
 执行 `make docker-build` 后，镜像就成功的生成到当前虚拟机了。只要使用docker push 就可以推送到镜像仓库了。
 
-![image-20220127154056820](C:\Users\mark\AppData\Roaming\Typora\typora-user-images\image-20220127154056820.png)
+![Image text](https://github.com/mark8s/helloworld-operator/tree/master/img/image-3.png)
 
 ### 部署operator
 
@@ -973,7 +974,7 @@ spec:
 
 deploy后，效果基本如下：
 
-![image-20220127155446415](C:\Users\mark\AppData\Roaming\Typora\typora-user-images\image-20220127155446415.png)
+![Image text](https://github.com/mark8s/helloworld-operator/tree/master/img/image-4.png)
 
 然后我们创建一个CR，它的位置在：config/samples/hello_v1alpha1_mark.yaml，内容如下
 
@@ -1008,5 +1009,5 @@ kubectl logs helloworld-operator-controller-manager-c598f6dd7-796jr -n helloworl
 
 加完，重新执行 `make deploy` 部署就ok了
 
-![image-20220127160012653](C:\Users\mark\AppData\Roaming\Typora\typora-user-images\image-20220127160012653.png)
+![Image text](https://github.com/mark8s/helloworld-operator/tree/master/img/image-5.png)
 
